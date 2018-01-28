@@ -1,0 +1,56 @@
+{
+  "name": "expensify-dual",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Andrew Mead course 2017",
+  "main": "index.html",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "scripts": {
+    "build:dev": "webpack --watch",
+    "build:prod": "webpack -p --env production",
+    "test": "cross-env NODE_ENV=test && jest --config=jest.config.json",
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
+  },
+  "author": "rodolph",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "firebase": "^4.8.1",
+    "history": "^4.7.2",
+    "moment": "^2.20.1",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
+    "numeral": "^2.0.6",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-datepicker": "^1.0.4",
+    "react-dates": "^16.0.1",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "uuid": "^3.1.0",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.3",
+    "dotenv": "^4.0.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}

@@ -1,0 +1,45 @@
+
+.button {
+  background: $blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-family: 'Cairo', sans-serif;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+
+.button--link {
+  background: none;
+}
+
+.button--secondary {
+  @extend .button;
+  background: $grey;
+}
+
+.button--lang {
+  @extend .button;
+  background: none;
+  color: $off-white;
+  font-family: 'Cairo', sans-serif;
+  margin: $m-size $m-size;
+}
+
+.button--lang:disabled {
+  color: grey;
+}
+
+.button--date-picker{
+  background: none;
+  border: 1px solid #cacccd;
+  height: 50px;
+  font-family: 'Cairo', sans-serif;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+  text-decoration: none;
+}

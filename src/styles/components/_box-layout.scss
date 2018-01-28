@@ -1,0 +1,33 @@
+
+.box-layout {
+  align-items: center;
+  background: url('/img/bg.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.box-layout__box {
+  border-radius: 10px;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 25rem;
+  height: 25rem;
+}
+
+.box-layout__en {
+  background: fade-out($color: $off-white, $amount: 0.25);
+}
+
+.box-layout__ar {
+  background: fade-out($color: rgb(242, 247, 215), $amount: 0.25);
+}
+
+.box-layout__title {
+  font-size: 180%;
+  margin: 0 0 $m-size 0;
+  line-height: 1.7;
+}

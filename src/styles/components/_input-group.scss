@@ -1,0 +1,35 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $m-size;
+  margin-top: 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    margin-bottom: $l-size;
+  }
+}
+
+.input-group__item-en {
+  margin-bottom: $s-size;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0 $m-size 0 0
+  }
+}
+
+.input-group__item-ar {
+  margin-bottom: $s-size;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0 0 0 $m-size
+  }
+}
+
+.input-label {
+  color: $blue;
+}
+
+::placeholder {
+  font-family: 'Cairo', sans-serif;
+}
