@@ -5,7 +5,7 @@
   "description": "Andrew Mead course 2017",
   "main": "index.html",
   "engines": {
-    "node": "8.9.1"
+    "node": "9.3.0"
   },
   "scripts": {
     "build:dev": "webpack --watch",
