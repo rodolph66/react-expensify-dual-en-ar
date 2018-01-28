@@ -1,45 +1,5 @@
-# Git Commands
+# Expensify Dual En/Ar
 
-git init    - Create a new git repo
-git status  - View changes to the project files
-git add     - add files to the staging area
-git commit  - createa new commit with files from staging area
-git log     - View recent commits' details
+This is a modified version of the Expensify App created from Andrew Mead's "The Complete React Web Developer Course". This modified version allows for changing the interface language between English and Arabic. It simply laods a font that supports both languages and then provide a src/intl/messages.js file which defines all text strings used in the app in the two languages used. A state property, called lang, keeps track of the languange throughtout the app and if changed loads the respective language specific strings.
 
-
-# in Git Bash console
-
-ls -a ~/.ssh  - To check if ssh keys are available (to use with github)
-
-
-Changing CSS classes conditionally:
-
-sample:
-
-//capsule.css
-.base {
-  background-color: white;
-  color: rbg(114,110,101);
-  font-size: 11px;
-  padding: 20px;
-  position: relative
-}
-.clickable {
-  compose: base;
-  cursor: pointer;
-}
-.withIcon {
-  compose: base;
-  padding-left: 62px;
-}
-
-//capsuleComponent.js
-import cx from "classnames"; // npm module classnames
-import styles from "/capsule.css";
-
-let customClass = cx(styles.base, {
-  [styles.clickable]: this.props.clickable,
-  [styles.withIcon]: !!this.props.icon
-})
-
-return <div className={customClass}>
+The idea was adapted from the React-intl but without loading or using it since the app operates indefferently to the locale used.
